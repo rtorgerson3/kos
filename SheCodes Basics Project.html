@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kos 🫧</title>
+    <style>
+      body {
+        background: #f7f6e7;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        font-family: Aileron;
+      }
+      h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 100;
+        margin-bottom: 17px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 100;
+      }
+      img {
+        border-radius: 4px;
+      }
+      a {
+        display: block;
+        font-size: 13px;
+        color: black;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        font-family: Aileron;
+        font-size: 18px;
+        font-weight: thin;
+        color: #f7f6e7;
+        background-color: #537791;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        color: #537791;
+        background-color: #f7f6e7;
+        border: 1px solid #537791;
+        transition: 200ms ease-in-out;
+      }
+      .company-name {
+        font-style: italic;
+      }
+      .footer {
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 10px 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><span class="company-name">Kos</span></h1>
+      <p>
+        noun ['küs] - A Norwegian concept of luxury as simplicity, where it's
+        the small joys that make life great
+      </p>
+      <img
+        src="https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,h_664,q_64,w_1900/v1/clients/norway/Perler_pa_en_snor_TR_04145_Foto_R_R_FrontalMarius_RuaTrondelag_Reiseliv_as_da6f9791-4032-4657-a5a1-c7e377a22204.jpg"
+        width="600"
+      />
+      <p>
+        Make the most of your vacation! Take the guesswork out of finding the
+        best local spots by using Kos' personally currated itineraries. From
+        cafes to beaches, Kos has got you covered. Kos is here to take the
+        stress out of trip planning to help you get that much closer to life's
+        simple pleasures. Check out the destinations below for Kos' sample
+        itineraries.
+      </p>
+      <hr />
+      <h2>San Diego, California, USA</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/486/original/San_Diego.png?1683236901"
+        width="600"
+      />
+      <p>
+        San Diego best embodies laid-back California. Its surf culture,
+        beckoning beaches, and postcard-perfect weather are enchanting. But
+        don’t be fooled: San Diego is a major metropolis in its own right. Its
+        serious food scene prides itself on a blend of Michelin nods and cheap
+        eats—no trip is complete without a fresh fish taco in La Jolla. San
+        Diego's a pure paradise for families, outdoor enthusiasts, and party
+        people who love to bar-hop the thumping Gaslamp Quarter.
+      </p>
+      <a
+        href="https://www.lonelyplanet.com/articles/top-things-to-do-in-san-diego"
+        target="blank"
+        class="learn-more"
+      >
+        <strong><em>Learn More ></em></strong></a
+      >
+      <hr />
+      <h2>Queenstown, New Zealand</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/487/original/Queenstown.png?1683237816"
+        width="600"
+      />
+      <p>
+        Queenstown is as much a verb as a noun, a place of doing that likes to
+        spruik itself as the 'adventure capital of the world'. It's famously the
+        birthplace of bungy jumping, and the list of adventures you can throw
+        yourself into here is encyclopedic – from alpine heliskiing to
+        zip-lining. It's rare that a visitor leaves without having tried
+        something that ups their heart rate, but to pigeonhole Queenstown as
+        just a playground is to overlook its cosmopolitan dining and arts scene,
+        its fine vineyards, and the diverse range of bars that can make evenings
+        as fun-filled as the days.
+      </p>
+      <a
+        href="https://www.lonelyplanet.com/new-zealand/queenstown-and-wanaka/queenstown"
+        target="blank"
+        class="learn-more"
+      >
+        <strong><em>Learn More ></em></strong></a
+      >
+      <hr />
+      <button>Get Inspired</button>
+      <p class="footer">This page was built by Rachel Torgerson</p>
+    </div>
+    <script>
+      function getInspired() {
+        let name = prompt("What is your first name?");
+        let destination = prompt("Where are you looking to travel to next?");
+        alert(
+          "Hi " +
+            name +
+            ", thanks for reaching out! In the meantime, check out our itineraries, ya never know, we might've already curated something for " +
+            destination +
+            "⚡️"
+        );
+      }
+      let pressButton = document.querySelector("button");
+      pressButton.addEventListener("click", getInspired);
+    </script>
+  </body>
+</html>
